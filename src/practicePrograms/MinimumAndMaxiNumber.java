@@ -4,17 +4,25 @@ public class MinimumAndMaxiNumber {
 
 	public static void main(String[] args)
 	{
-		int a[]= {1,42,65,13,2,1};
-		int min=a[0];
-		int max=a[0];
-		for(int number: a)
+		// prime number
+		int num=123;
+		boolean value=true;
+		for(int i=2; i<num/2; i++)
 		{
-			if(number<min)min=number;
-			if(number>max) max=number;
+			if(num%i==0)
+			{
+				value=false;
+				System.out.println("this is not prime number");
+				
+				break;
+			}
+		
+			
 		}
-		System.out.println(min);
-		System.out.println(max);
-	    
+		if(value==true)
+		{
+			System.out.println("This is  Prime number");
+		}
 
 	}
 
